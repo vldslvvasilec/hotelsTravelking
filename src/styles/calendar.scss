@@ -1,0 +1,133 @@
+$circle-size: calc((5.2vw + 5.2vh) / 2);
+$circle-margin: calc((1vw + 1vh) / 2);
+$circle-font-date: 1.2em;
+$circle-font-price: .9em;
+#calendar-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.flatpickr-calendar {
+    width: 80%;
+    border: none;
+    box-shadow: none;
+}
+.flatpickr-innerContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.flatpickr-rContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.flatpickr-days {
+    width: 100%;
+}
+.dayContainer {
+    max-width: none;
+    width: 100%;
+    min-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1vw;
+    .flatpickr-day {
+        min-width: #{$circle-size};
+        height: #{$circle-size};
+        line-height: 1.2em;
+        color: rgba(0, 0, 0, 0.7);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+    .flatpickr-disabled {
+        width: #{$circle-size};
+        height: #{$circle-size};
+    }
+}
+.calendar-day {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+.calendar-day-price {
+    font-size: .9em;
+    font-weight: 500;
+}
+.flatpickr-disabled {
+    color: rgba(0, 0, 0, 0.3) !important;
+    pointer-events: none;
+}
+.nextMonthDay,
+.prevMonthDay {
+    color: rgba(0, 0, 0, 0.2) !important;
+}
+
+@media screen and (max-width: 1440px) {
+    .dayContainer {
+        .flatpickr-day {
+            font-size: 1em;
+        }
+    }
+    .calendar-day {
+        font-size: 1em;
+    }
+    .calendar-day-price {
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .dayContainer {
+        .flatpickr-day {
+            font-size: .9em;
+        }
+    }
+    .calendar-day {
+        font-size: .9em;
+    }
+    .calendar-day-price {
+        font-size: .7em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flatpickr-calendar {
+        width: 90%;
+    }
+    .dayContainer {
+        .flatpickr-day {
+            min-width: calc((7.5vw + 7.5vh) / 2);
+            height: calc((7.5vw + 7.5vh) / 2);
+            font-size: .9em;
+        }
+    }
+    .calendar-day {
+        font-size: .9em;
+    }
+    .calendar-day-price {
+        font-size: .7em;
+    }
+}
+@media screen and (max-width: 425px) {
+    .flatpickr-calendar {
+        width: 96%;
+    }
+    .dayContainer {
+        .flatpickr-day {
+            min-width: calc((7.5vw + 7.5vh) / 2);
+            height: calc((7.5vw + 7.5vh) / 2);
+            font-size: .9em;
+        }
+    }
+}

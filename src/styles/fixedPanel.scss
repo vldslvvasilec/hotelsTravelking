@@ -1,0 +1,111 @@
+#fixed-panel {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1em 0 .3em 0;
+    border-top: 1px solid #ccc;
+  
+    .panel-content {
+      display: flex;
+      justify-content: center;
+      gap: 2%; 
+      width: 100%;
+      .panel-item {
+        margin: 0 .5em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        text-wrap: nowrap;
+        font-size: 1em;
+        p {
+          margin-bottom: .5em;
+        }
+  
+        .data-cell {
+          padding: .5em 0;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          background-color: #f9f9f9;
+          box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+          font-weight: bold;
+        }
+  
+        button {
+          padding: .7em 1em;
+          background: #007BFF;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          text-align: center;
+          text-wrap: wrap;
+          cursor: pointer;
+          transition: transform .2s;
+          &:disabled {
+            background-color: #ccc;
+            color: #666;
+            border: 1px solid #aaa;
+            cursor: not-allowed;
+          }
+          &:hover {
+            transform: scale(1.07);
+          }
+        }
+      }
+    }
+  }
+.panel-date,
+.panel-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.panel-date {
+    width: 45%;
+    margin: 0;
+    .panel-item {
+        width: 45%;
+        div {
+            width: 100%;
+        }
+    }
+}
+.panel-info {
+    width: 50%;
+    margin: 0;
+    flex: 1 1 2;
+    .panel-item {
+        width: 45%;
+        div {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #fixed-panel {
+        .panel-content {
+            .panel-item {
+                font-size: .7em;
+            }
+        }
+    }
+}
+@media screen and (max-width: 525px) {
+    #fixed-panel {
+        .panel-content {
+            flex-direction: column;
+            align-items: center;
+            section {
+                width: 90%;
+                &:first-child {
+                    margin-bottom: 3%;
+                }
+            }
+        }
+    }
+  }
