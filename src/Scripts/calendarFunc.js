@@ -96,7 +96,7 @@ export function updateModalContent(startDate, endDate, diffInDays, dateData) {
 
   // Update modal elements with calculated values
   document.getElementById("start-date").textContent = formatDateForDisplay(startDate);
-  document.getElementById("end-date").textContent = endDate ? formatDateForDisplay(endDate) : "Not selected";
+  document.getElementById("end-date").textContent = endDate ? formatDateForDisplay(endDate) : "Not sel.";
   document.getElementById("total-nights").textContent = totalNights;
   document.getElementById("total-cost").textContent = `$${totalPrice}`;
 
@@ -106,8 +106,8 @@ export function updateModalContent(startDate, endDate, diffInDays, dateData) {
 
 // Resets modal content to default when no dates are selected
 export function resetModalContent() {
-  document.getElementById("start-date").textContent = "Not selected"; // Reset start date
-  document.getElementById("end-date").textContent = "Not selected"; // Reset end date
+  document.getElementById("start-date").textContent = "Not sel."; // Reset start date
+  document.getElementById("end-date").textContent = "Not sel."; // Reset end date
   document.getElementById("total-nights").textContent = "0"; // Reset nights
   document.getElementById("total-cost").textContent = "0 $"; // Reset cost
 

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 #fixed-panel {
     width: 100%;
     position: fixed;
@@ -27,6 +28,9 @@
         }
   
         .data-cell {
+          width: 100%;
+          font-family: 'Orbitron', sans-serif;
+          letter-spacing: .05em;
           padding: .5em 0;
           border: 1px solid #ccc;
           border-radius: 5px;

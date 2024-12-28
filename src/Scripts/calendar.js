@@ -54,13 +54,13 @@ export async function initializeCalendar(selectedStartDate = null, selectedEndDa
         dayElem.textContent = ""; // Clear default text
 
         // Add day number
-        const dayNumber = document.createElement("div");
+        const dayNumber = document.createElement("section");
         const day = parsedDate.getDate();
         dayNumber.textContent = day;
         dayElem.appendChild(dayNumber);
 
         // Add price label
-        const priceLabel = document.createElement("div");
+        const priceLabel = document.createElement("section");
         priceLabel.classList.add("calendar-day-price");
         priceLabel.textContent = `$${price}`;
         dayElem.appendChild(priceLabel);

@@ -1,0 +1,92 @@
+.full-image-modal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+.modal-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+        color: red;
+    }
+}
+
+.modal-images-list {
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em 0;
+    flex-wrap: nowrap;
+    margin-top: auto;
+}
+
+.modal-image-item {
+    width: 8%;
+    max-height: 3em;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 5px;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    &.active-image {
+        transform: scale(1.2) !important;
+    }
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform .3s ease-out;
+    svg {
+        width: 2em;
+        height: 2em;
+        fill: #fff;
+        transition: transform .3s ease-out;
+    }
+    &:hover {
+        svg {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.main-full-image {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin: auto 0;
+    overflow: hidden;
+
+    .full-image {
+        height: 70vh;
+        object-fit: contain;
+        border-radius: 15px;
+        transition: transform 0.3s ease;
+    }
+}
