@@ -35,14 +35,43 @@ This project is a web application for selecting and booking hotels using an API.
 
     After this, the application will open at [http://localhost:5173](http://localhost:5173).
 
-## Project Description
+## Features
 
-- The project uses **Vite** for fast and efficient build setup. Vite was chosen for its high performance, instant reloading, and simple configuration. This significantly speeds up the development process and improves the developer experience.
-- **SASS** is used as a CSS preprocessor. SASS allows organizing styles more structurally and conveniently, supporting features like nesting, variables, and mixins.
-- All styles of the project are located in the **`/styles`** folder, while all JavaScript code is in the **`/Scripts`** folder, ensuring a clean and organized project structure.
+- **Dynamic Calendar:** Users can interact with a calendar to select dates for hotel bookings.
+- **Room Rendering:** The application dynamically displays available rooms based on API responses.
+- **Modal Windows:** Modals are implemented for displaying detailed room information or booking forms.
+- **Responsive Design:** The application is fully responsive and adjusts to different screen sizes for an optimal user experience.
 
+## Technologies Used
 
+- **HTML, CSS (SASS), JavaScript:** Core web technologies to build the structure, style, and functionality of the application.
+- **Vite:** A build tool providing fast development and optimized production builds.
+- **API Integration:** The application communicates with a backend API for fetching and submitting data.
 
+## Contributing
+
+Contributions are welcome! Follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix:
+    ```bash
+    git checkout -b feature-name
+    ```
+3. Make your changes and commit them:
+    ```bash
+    git commit -m "Add feature-name"
+    ```
+4. Push to your forked repository:
+    ```bash
+    git push origin feature-name
+    ```
+5. Open a pull request to the `main` branch of the original repository.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+---
 
 # Hotels Travelking
 
@@ -81,15 +110,43 @@ Tento projekt je webová aplikace pro výběr a rezervaci hotelů pomocí API. I
 
     Po tomto kroku se aplikace otevře na [http://localhost:5173](http://localhost:5173).
 
-## Popis projektu
+## Funkce
 
-- Projekt využívá **Vite** pro rychlé a efektivní nastavení sestavení. Vite byl vybrán pro svou vysokou výkonnost, okamžité načítání a jednoduchou konfiguraci. To významně urychluje vývojový proces a zlepšuje zkušenosti vývojáře.
-- **SASS** je použit jako preprocesor pro CSS. SASS umožňuje organizovat styly strukturovaněji a pohodlněji, podporuje funkce jako vnořování, proměnné a mixiny.
-- Všechny styly projektu jsou umístěny ve složce **`/styles`**, zatímco veškerý JavaScript kód je ve složce **`/Scripts`**, což zajišťuje čistou a organizovanou strukturu projektu.
+- **Dynamický Kalendář:** Uživatelé mohou pracovat s kalendářem pro výběr termínů rezervace.
+- **Zobrazení Pokojů:** Aplikace dynamicky zobrazuje dostupné pokoje na základě odpovědí z API.
+- **Modální Okna:** Implementována modální okna pro zobrazení detailů pokojů nebo rezervačních formulářů.
+- **Responzivní Design:** Aplikace je plně responzivní a přizpůsobuje se různým velikostem obrazovek.
 
+## Použité Technologie
 
+- **HTML, CSS (SASS), JavaScript:** Jádrové webové technologie pro tvorbu struktury, stylu a funkčnosti aplikace.
+- **Vite:** Nástroj pro sestavení, který poskytuje rychlý vývoj a optimalizované produkční sestavení.
+- **API Integrace:** Aplikace komunikuje s backendovým API pro získání a odesílání dat.
 
+## Přispívání
 
+Příspěvky jsou vítány! Postupujte podle těchto kroků:
+
+1. Forkujte repozitář.
+2. Vytvořte novou větev pro vaši funkci nebo opravu chyby:
+    ```bash
+    git checkout -b feature-name
+    ```
+3. Proveďte své změny a potvrďte je:
+    ```bash
+    git commit -m "Add feature-name"
+    ```
+4. Nahrajte změny do vaší forkované verze:
+    ```bash
+    git push origin feature-name
+    ```
+5. Otevřete pull request na větev `main` původního repozitáře.
+
+## Licence
+
+Tento projekt je licencován pod MIT Licencí. Další informace naleznete v souboru `LICENSE`.
+
+---
 
 # Hotels Travelking
 
@@ -128,8 +185,38 @@ Tento projekt je webová aplikace pro výběr a rezervaci hotelů pomocí API. I
 
     После этого откроется приложение по адресу [http://localhost:5173](http://localhost:5173).
 
-## Описание проекта
+## Возможности
 
-- В проекте используется **Vite** для быстрого и удобного построения проекта. Vite был выбран за его высокую производительность, мгновенную перезагрузку и простоту настройки. Это позволяет значительно ускорить процесс разработки и улучшить опыт работы с приложением.
-- В качестве препроцессора стилей используется **SASS**. SASS позволяет организовывать стили более структурированно и удобно, поддерживая возможности вложенности, переменных и миксинов.
-- Все стили проекта находятся в папке **`/styles`**, а весь JavaScript код находится в папке **`/Scripts`**, что позволяет поддерживать чистую и понятную структуру проекта.
+- **Динамический Календарь:** Пользователи могут взаимодействовать с календарем для выбора дат бронирования.
+- **Отображение Номеров:** Приложение динамически отображает доступные номера на основе ответов API.
+- **Модальные Окна:** Реализованы модальные окна для отображения деталей номера или форм бронирования.
+- **Адаптивный Дизайн:** Приложение полностью адаптивно и подстраивается под различные размеры экранов.
+
+## Используемые Технологии
+
+- **HTML, CSS (SASS), JavaScript:** Основные веб-технологии для создания структуры, стилей и функциональности приложения.
+- **Vite:** Инструмент для сборки, обеспечивающий быструю разработку и оптимизацию для продакшена.
+- **Интеграция с API:** Приложение взаимодействует с backend API для получения и отправки данных.
+
+## Участие в Разработке
+
+Приветствуются любые предложения и улучшения! Следуйте этим шагам для участия:
+
+1. Сделайте fork репозитория.
+2. Создайте новую ветку для своей функции или исправления:
+    ```bash
+    git checkout -b feature-name
+    ```
+3. Внесите изменения и зафиксируйте их:
+    ```bash
+    git commit -m "Add feature-name"
+    ```
+4. Отправьте изменения в свою fork-версию:
+    ```bash
+    git push origin feature-name
+    ```
+5. Откройте pull request на ветку `main` оригинального репозитория.
+
+## Лицензия
+
+Этот проект лицензирован под лицензией MIT. Подробнее в файле `LICENSE`.
