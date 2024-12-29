@@ -1,15 +1,19 @@
 # Hotels Travelking
 
-This project is a web application for selecting and booking hotels using an API. It implements functions for displaying available rooms, a calendar, and working with modal windows. The project uses standard web technologies such as HTML, CSS (SASS), and JavaScript.
+This project is a web application for selecting and booking hotels using an API. It includes features for displaying available rooms, a calendar, and working with modals. The project uses standard web technologies like HTML, CSS (SASS), and JavaScript.
 
 ## Project Structure
 
-- **`/styles`** — Folder for style files. It contains the SASS files used for styling the application.
-- **`/Scripts`** — Folder containing JavaScript files with the project functionality:
+- **`/styles`** — Folder for style files. It contains SASS files used for styling the application.
+- **`/Scripts`** — Folder containing JavaScript files for the project functionality:
   - `calendarFunc.js` — Additional functions for working with the calendar.
-  - `functions.js` — Helper functions for working with modals and amenities.
-  - `renderRooms.js` — Functions for displaying selected rooms.
-  - `getDates.js` and `sendDatesToApi.js` — Scripts for sending requests to the API.
+  - `calendar.js` — Main script for the calendar functionality.
+  - `functions.js` — Helper functions for modals and amenities.
+  - `getDates.js` — Script for retrieving selected dates.
+  - `sendDatesToApi.js` — Script for sending date data to the API.
+  - `renderRooms.js` — Functions for rendering available rooms.
+  - `openImageModal.js` — Script for opening image modals.
+  - `content.js` — Script for managing content on the page.
 
 ## Installation and Running
 
@@ -33,62 +37,42 @@ This project is a web application for selecting and booking hotels using an API.
     npm run dev
     ```
 
-    After this, the application will open at [http://localhost:5173](http://localhost:5173).
+    The application will open at [http://localhost:5173](http://localhost:5173).
 
 ## Features
 
-- **Dynamic Calendar:** Users can interact with a calendar to select dates for hotel bookings.
-- **Room Rendering:** The application dynamically displays available rooms based on API responses.
-- **Modal Windows:** Modals are implemented for displaying detailed room information or booking forms.
-- **Responsive Design:** The application is fully responsive and adjusts to different screen sizes for an optimal user experience.
+- **Dynamic Calendar:** Users can interact with the calendar to select booking dates.
+- **Room Display:** The application dynamically displays available rooms based on API responses.
+- **Modals:** Modal windows are implemented to display room details or booking forms.
+- **Responsive Design:** The application is fully responsive and adapts to various screen sizes.
 
 ## Technologies Used
 
-- **HTML, CSS (SASS), JavaScript:** Core web technologies to build the structure, style, and functionality of the application.
-- **Vite:** A build tool providing fast development and optimized production builds.
-- **API Integration:** The application communicates with a backend API for fetching and submitting data.
-
-## Contributing
-
-Contributions are welcome! Follow these steps to contribute:
-
-1. Fork the repository.
-2. Create a new branch for your feature or bugfix:
-    ```bash
-    git checkout -b feature-name
-    ```
-3. Make your changes and commit them:
-    ```bash
-    git commit -m "Add feature-name"
-    ```
-4. Push to your forked repository:
-    ```bash
-    git push origin feature-name
-    ```
-5. Open a pull request to the `main` branch of the original repository.
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
-
+- **HTML, CSS (SASS), JavaScript:** Core web technologies for creating the structure, styles, and functionality of the app.
+- **Vite:** Build tool that provides fast development and production optimization.
+- **API Integration:** The app interacts with a backend API to retrieve and send data.
 ---
 
 # Hotels Travelking
 
-Tento projekt je webová aplikace pro výběr a rezervaci hotelů pomocí API. Implementuje funkce pro zobrazení dostupných pokojů, kalendáře a práci s modálními okny. Projekt využívá standardní webové technologie jako HTML, CSS (SASS) a JavaScript.
+Tento projekt je webová aplikace pro výběr a rezervaci hotelů pomocí API. Obsahuje funkce pro zobrazení dostupných pokojů, kalendář a práci s modálními okny. Projekt využívá standardní webové technologie jako HTML, CSS (SASS) a JavaScript.
 
 ## Struktura projektu
 
 - **`/styles`** — Složka pro soubory stylů. Obsahuje SASS soubory používané pro stylování aplikace.
-- **`/Scripts`** — Složka obsahující JavaScript soubory s funkcionalitou projektu:
+- **`/Scripts`** — Složka obsahující JavaScript soubory pro funkčnost projektu:
   - `calendarFunc.js` — Další funkce pro práci s kalendářem.
-  - `functions.js` — Pomocné funkce pro práci s modálními okny a vybavením.
-  - `renderRooms.js` — Funkce pro zobrazení vybraných pokojů.
-  - `getDates.js` a `sendDatesToApi.js` — Skripty pro odesílání požadavků na API.
+  - `calendar.js` — Hlavní skript pro práci s kalendářem.
+  - `functions.js` — Pomocné funkce pro modální okna a vybavení.
+  - `getDates.js` — Skript pro získání vybraných dat.
+  - `sendDatesToApi.js` — Skript pro odesílání dat do API.
+  - `renderRooms.js` — Funkce pro zobrazení dostupných pokojů.
+  - `openImageModal.js` — Skript pro otevření modálních oken s obrázky.
+  - `content.js` — Skript pro správu obsahu na stránce.
 
 ## Instalace a spuštění
 
-1. Klonujte repozitář:
+1. Naklonujte repozitář:
     ```bash
     git clone https://github.com/vldslvvasilec/hotelsTravelking.git
     ```
@@ -108,44 +92,20 @@ Tento projekt je webová aplikace pro výběr a rezervaci hotelů pomocí API. I
     npm run dev
     ```
 
-    Po tomto kroku se aplikace otevře na [http://localhost:5173](http://localhost:5173).
+    Aplikace se otevře na [http://localhost:5173](http://localhost:5173).
 
 ## Funkce
 
-- **Dynamický Kalendář:** Uživatelé mohou pracovat s kalendářem pro výběr termínů rezervace.
-- **Zobrazení Pokojů:** Aplikace dynamicky zobrazuje dostupné pokoje na základě odpovědí z API.
-- **Modální Okna:** Implementována modální okna pro zobrazení detailů pokojů nebo rezervačních formulářů.
-- **Responzivní Design:** Aplikace je plně responzivní a přizpůsobuje se různým velikostem obrazovek.
+- **Dynamický kalendář:** Uživatelé mohou interagovat s kalendářem pro výběr dat rezervace.
+- **Zobrazení pokojů:** Aplikace dynamicky zobrazuje dostupné pokoje na základě odpovědí API.
+- **Modální okna:** Implementována modální okna pro zobrazení detailů pokoje nebo rezervačních formulářů.
+- **Responzivní design:** Aplikace je plně responzivní a přizpůsobuje se různým velikostem obrazovky.
 
-## Použité Technologie
+## Použité technologie
 
-- **HTML, CSS (SASS), JavaScript:** Jádrové webové technologie pro tvorbu struktury, stylu a funkčnosti aplikace.
-- **Vite:** Nástroj pro sestavení, který poskytuje rychlý vývoj a optimalizované produkční sestavení.
-- **API Integrace:** Aplikace komunikuje s backendovým API pro získání a odesílání dat.
-
-## Přispívání
-
-Příspěvky jsou vítány! Postupujte podle těchto kroků:
-
-1. Forkujte repozitář.
-2. Vytvořte novou větev pro vaši funkci nebo opravu chyby:
-    ```bash
-    git checkout -b feature-name
-    ```
-3. Proveďte své změny a potvrďte je:
-    ```bash
-    git commit -m "Add feature-name"
-    ```
-4. Nahrajte změny do vaší forkované verze:
-    ```bash
-    git push origin feature-name
-    ```
-5. Otevřete pull request na větev `main` původního repozitáře.
-
-## Licence
-
-Tento projekt je licencován pod MIT Licencí. Další informace naleznete v souboru `LICENSE`.
-
+- **HTML, CSS (SASS), JavaScript:** Hlavní webové technologie pro tvorbu struktury, stylů a funkčnosti aplikace.
+- **Vite:** Nástroj pro sestavení, který poskytuje rychlý vývoj a optimalizaci pro produkci.
+- **Integrace s API:** Aplikace komunikuje s backend API pro získávání a odesílání dat.
 ---
 
 # Hotels Travelking
@@ -157,9 +117,13 @@ Tento projekt je licencován pod MIT Licencí. Další informace naleznete v sou
 - **`/styles`** — Папка для файлов стилей. В ней находятся SASS-файлы, которые используются для стилизации приложения.
 - **`/Scripts`** — Папка, содержащая JavaScript-файлы с функциональностью проекта:
   - `calendarFunc.js` — Дополнительные функции для работы с календарем.
+  - `calendar.js` — Основной скрипт для работы с календарем.
   - `functions.js` — Вспомогательные функции для работы с модальными окнами и удобствами.
+  - `getDates.js` — Скрипт для получения выбранных дат.
+  - `sendDatesToApi.js` — Скрипт для отправки запросов к API с выбранными датами.
   - `renderRooms.js` — Функции для отображения выбранных номеров.
-  - `getDates.js` и `sendDatesToApi.js` — Скрипты для отправки запросов к API.
+  - `openImageModal.js` — Скрипт для открытия модальных окон с изображениями.
+  - `content.js` — Скрипт для управления контентом на странице.
 
 ## Установка и запуск
 
@@ -197,26 +161,3 @@ Tento projekt je licencován pod MIT Licencí. Další informace naleznete v sou
 - **HTML, CSS (SASS), JavaScript:** Основные веб-технологии для создания структуры, стилей и функциональности приложения.
 - **Vite:** Инструмент для сборки, обеспечивающий быструю разработку и оптимизацию для продакшена.
 - **Интеграция с API:** Приложение взаимодействует с backend API для получения и отправки данных.
-
-## Участие в Разработке
-
-Приветствуются любые предложения и улучшения! Следуйте этим шагам для участия:
-
-1. Сделайте fork репозитория.
-2. Создайте новую ветку для своей функции или исправления:
-    ```bash
-    git checkout -b feature-name
-    ```
-3. Внесите изменения и зафиксируйте их:
-    ```bash
-    git commit -m "Add feature-name"
-    ```
-4. Отправьте изменения в свою fork-версию:
-    ```bash
-    git push origin feature-name
-    ```
-5. Откройте pull request на ветку `main` оригинального репозитория.
-
-## Лицензия
-
-Этот проект лицензирован под лицензией MIT. Подробнее в файле `LICENSE`.
